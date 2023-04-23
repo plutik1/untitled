@@ -40,9 +40,9 @@ public class s3 {
             su=su+list.get(i);
         }
         System.out.println();
-        System.out.printf ("Минимальный элемент: %d\n",max);
+        System.out.printf ("Макс элемент: %d\n",max);
         System.out.printf ("Минимальный элемент: %d\n",min);
-        System.out.printf ("Минимальный элемент: %d\n",su);
+        System.out.printf ("сумма элемент: %d\n",su);
         long begin = System.currentTimeMillis();
         for (int i =0; i<10000;i++){
             list.add(0,0);
