@@ -48,7 +48,7 @@ public class s3 {
             list.add(0,0);
         }
         long end = System.currentTimeMillis();
-        System.out.println(end - begin);
+        System.out.println(end - begin +"  время работы арай лист  " );
         //System.out.println(list.size());
         LinkedList<Integer> integers = new LinkedList<>();
         for (int i = 0; i < 20; i++) {//цикл забития рандомом
@@ -59,7 +59,7 @@ public class s3 {
             integers.addFirst(0);
         }
          end = System.currentTimeMillis();
-        System.out.println(end - begin);
+        System.out.println(end - begin+ " время работы линкед лист"  );
         list.trimToSize();
 
         System.out.println(list.size());
