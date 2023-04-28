@@ -14,6 +14,7 @@ public class s5
         ArrayList<String> name = new ArrayList<>();
         ArrayList<String> soname = new ArrayList<>();
         ArrayList<Integer> age = new ArrayList<>();
+        ArrayList<Integer> age1 = new ArrayList<>();
         //String [] str = new String[4];
         int inte = 0;
 
@@ -32,6 +33,7 @@ public class s5
                 soname.add(str[2] + " ");
                 inte = Integer.parseInt(str[3]);
                 age.add(inte);
+                age1.add(inte);
 
         }
 scanner.close();
@@ -40,11 +42,10 @@ scanner.close();
         }
 
         age.sort(Comparator.naturalOrder());
+        for (int i = 0; i<name.size();i++) {
+            System.out.println(age.get(i));
+        }
 
-            System.out.println(age.get(0));
-        System.out.println(age.get(1));
-        System.out.println(age.get(2));
-        System.out.println(age.get(3));
 
     }
 
