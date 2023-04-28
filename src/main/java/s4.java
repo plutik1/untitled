@@ -18,12 +18,12 @@ public class s4 {
         while (esc==0){
 
             System.out.println("Введите фамилию следующего игрока");
-       //     System.out.println(family.get(esc));
+            //     System.out.println(family.get(esc));
             String in = q.nextLine();
             family.add(in);
             //System.out.println(family.get(esc));
             System.out.println("Введите имя следующего игрока");
-             in = q.nextLine();
+            in = q.nextLine();
             name.add(in);
             System.out.println("Введите отчество следующего игрока");
             in = q.nextLine();
@@ -37,17 +37,17 @@ public class s4 {
 
             System.out.println("если вы хотите ввести еще одного напишите -1- Сделать обволочку ни проверку инта");
             //q = new Scanner(System.in);
-             String in1 = q.nextLine();
+            String in1 = q.nextLine();
 
-             Integer perevod = Integer.parseInt(in1);
+            Integer perevod = Integer.parseInt(in1);
             // String perevod2 = "да";
             esc = esc+1;
-             while (perevod == 1 ){
-                 //System.out.println("влетели в цикл");
-                 esc = 0;
-                 perevod = 5;
+            while (perevod == 1 ){
+                //System.out.println("влетели в цикл");
+                esc = 0;
+                perevod = 5;
 
-             }
+            }
 
         }
         //System.out.println(family.size());
