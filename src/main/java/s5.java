@@ -17,7 +17,8 @@ public class s5
         ArrayList<Integer> age1 = new ArrayList<>();
         //String [] str = new String[4];
         int inte = 0;
-
+int sort=0;
+        int sort2=0;
         File file = new File("testfile");
         Scanner scanner= new Scanner(file);
         String in = " ";
@@ -43,13 +44,27 @@ scanner.close();
 
         age.sort(Comparator.naturalOrder());
         for (int i = 0; i<name.size();i++) {
-            System.out.println(age.get(i));
+            System.out.println(age.get(i));//АГЕ 1 отсортированный
         }
-
+        for (int i = 0; i<age.size();i++) {
+            sort= age.get(i);
+            //System.out.print(age.size());
+            for (int j = 0; j<age1.size();j++) {
+                sort2= age1.get(j);
+                if (sort2==sort) {
+                    System.out.print(family.get(j));
+                   System.out.print(name.get(j));
+                    System.out.print(soname.get(j));
+                    System.out.print(age.get(i));
+                    System.out.println("");
+                }
+            }
+        }
+        }
 
     }
 
 
-}
+
 
 
