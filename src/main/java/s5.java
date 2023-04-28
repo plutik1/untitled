@@ -13,8 +13,9 @@ public class s5
         ArrayList<String> family = new ArrayList<>();
         ArrayList<String> name = new ArrayList<>();
         ArrayList<String> soname = new ArrayList<>();
-        ArrayList<String> age = new ArrayList<>();
+        ArrayList<Integer> age = new ArrayList<>();
         //String [] str = new String[4];
+        int inte = 0;
 
         File file = new File("testfile");
         Scanner scanner= new Scanner(file);
@@ -29,18 +30,22 @@ public class s5
                 family.add(str[0] + " ");
                 name.add(str[1] + " ");
                 soname.add(str[2] + " ");
-                age.add(str[3] + " ");
+                inte = Integer.parseInt(str[3]);
+                age.add(inte);
 
         }
 scanner.close();
         for (int i = 0; i<name.size();i++) {
-       System.out.print(age.get(i));
+       System.out.println(age.get(i));
         }
 
         age.sort(Comparator.naturalOrder());
-        for (int i = 0; i<name.size();i++) {
-            System.out.println(age.get(i));
-        }
+
+            System.out.println(age.get(0));
+        System.out.println(age.get(1));
+        System.out.println(age.get(2));
+        System.out.println(age.get(3));
+
     }
 
 
